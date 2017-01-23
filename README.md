@@ -1,5 +1,5 @@
 ###Bullet Time Projects
-##This repository is for our Cap Mkts projects
+####This repository is for our Cap Mkts projects
 
 ###Current Projects
-##-Commanding a Room Companion App
+####-Commanding a Room Companion App
