@@ -1,5 +1,5 @@
 //
-//  RegistrationVC.swift
+//  LoginVC.swift
 //  Commanding A Room
 //
 //  Created by Jessica Saputo on 1/29/17.

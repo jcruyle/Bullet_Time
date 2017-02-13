@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  RegistrationVC.swift
 //  Commanding A Room
 //
 //  Created by Jessica Saputo on 1/29/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class HoldVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
