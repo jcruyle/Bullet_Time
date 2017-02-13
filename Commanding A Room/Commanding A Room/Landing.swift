@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Landing.swift
 //  Commanding A Room
 //
 //  Created by Jessica Saputo on 1/22/17.
