@@ -15,6 +15,11 @@ class RegistrationVC: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var rolePickerBtn: UIButton!
     @IBOutlet weak var rolePicker: UIPickerView!
     @IBOutlet weak var BBanfield: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var userIDTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
     
     let clasID = ["Test-001", "Test-002", "Test-003"]
     let role = ["Student", "Instructor"]
@@ -90,8 +95,9 @@ class RegistrationVC: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
     }
     
-  
-    
+    @IBAction func alreadyRegisteredBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
   
     
