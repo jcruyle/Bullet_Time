@@ -123,7 +123,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrO-gU-qRz">
                                                 <rect key="frame" x="178" y="0.0" width="165" height="45"/>
-                                                <color key="backgroundColor" red="0.72549019609999998" green="0.82745098039999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.11880096793174744" green="0.26462975144386292" blue="0.40401944518089294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -372,7 +372,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOC-7X-mnD">
                                 <rect key="frame" x="124" y="518" width="127" height="45"/>
-                                <color key="backgroundColor" red="0.72549019609999998" green="0.82745098039999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.1188009679" green="0.2646297514" blue="0.40401944519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="53O-qr-IXu"/>
                                     <constraint firstAttribute="width" constant="127.5" id="OMG-7g-zOA"/>
@@ -477,77 +477,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="4tH-ai-QAB">
-                                <rect key="frame" x="16" y="50" width="343" height="125"/>
+                                <rect key="frame" x="16" y="50" width="343" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87K-0L-33x">
-                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="125"/>
-                                        <state key="normal" image="CheckMark"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="140"/>
+                                        <state key="normal" image="Lessons"/>
                                         <connections>
                                             <segue destination="OtF-Ix-omx" kind="show" id="aa6-zW-TXp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beH-cE-3bR">
-                                        <rect key="frame" x="203.5" y="0.0" width="139.5" height="125"/>
-                                        <state key="normal" image="RedX.svg"/>
+                                        <rect key="frame" x="203.5" y="0.0" width="139.5" height="140"/>
+                                        <state key="normal" image="Feedback"/>
                                         <connections>
                                             <segue destination="JgQ-4r-3x5" kind="show" id="UI1-HT-Cpa"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="Wgk-8q-3bf"/>
+                                    <constraint firstAttribute="height" constant="140" id="Wgk-8q-3bf"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="GCf-W0-0ir">
-                                <rect key="frame" x="16" y="183" width="343" height="125"/>
+                                <rect key="frame" x="16" y="198" width="343" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-Lb-t8C">
-                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="125"/>
-                                        <state key="normal" image="RedX.svg"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="140"/>
+                                        <state key="normal" image="Assignments"/>
                                         <connections>
                                             <segue destination="mch-6V-2SB" kind="show" id="FkN-x6-BpQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l48-ws-Gav">
-                                        <rect key="frame" x="203.5" y="0.0" width="139.5" height="125"/>
-                                        <state key="normal" image="CheckMark"/>
+                                        <rect key="frame" x="203.5" y="0.0" width="139.5" height="140"/>
+                                        <state key="normal" image="Bonus"/>
                                         <connections>
-                                            <segue destination="Y0j-lX-Ju0" kind="show" id="lZD-DC-wzc"/>
+                                            <segue destination="g05-Rg-Olc" kind="show" id="yGh-ZG-gBV"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="hJl-f2-1Al"/>
+                                    <constraint firstAttribute="height" constant="140" id="hJl-f2-1Al"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-DO-elm">
-                                <rect key="frame" x="16" y="316" width="343" height="125"/>
+                                <rect key="frame" x="16" y="346" width="343" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsS-21-jF5">
-                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="125"/>
-                                        <state key="normal" image="CheckMark"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="140"/>
+                                        <state key="normal" image="MyFeedback"/>
                                         <connections>
                                             <segue destination="h36-Ht-cAv" kind="show" id="Sjw-wC-S3G"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clS-x6-CR6">
-                                        <rect key="frame" x="203.5" y="0.0" width="139.5" height="125"/>
-                                        <state key="normal" image="RedX.svg"/>
+                                        <rect key="frame" x="203.5" y="0.0" width="139.5" height="140"/>
+                                        <state key="normal" image="Contact"/>
                                         <connections>
                                             <segue destination="FLe-AL-iWj" kind="show" id="ezi-sX-5ZQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="9hP-ec-gf8"/>
+                                    <constraint firstAttribute="height" constant="140" id="9hP-ec-gf8"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-7X-eZu">
-                                <rect key="frame" x="16" y="475" width="343" height="91"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-7X-eZu">
+                                <rect key="frame" x="16" y="506" width="343" height="127"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="91" id="ktB-ug-JBA"/>
+                                    <constraint firstAttribute="height" constant="127" id="ktB-ug-JBA"/>
                                 </constraints>
-                                <state key="normal" title="Placeholder Button">
+                                <state key="normal" image="Start">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -559,7 +559,7 @@
                         <constraints>
                             <constraint firstItem="S5I-DO-elm" firstAttribute="leading" secondItem="GCf-W0-0ir" secondAttribute="leading" id="2ZN-js-SBO"/>
                             <constraint firstItem="4tH-ai-QAB" firstAttribute="leading" secondItem="gUH-Pj-YAg" secondAttribute="leadingMargin" id="EGG-BX-EQY"/>
-                            <constraint firstItem="Ktg-7X-eZu" firstAttribute="top" secondItem="S5I-DO-elm" secondAttribute="bottom" constant="34" id="GPg-iq-BPF"/>
+                            <constraint firstItem="Ktg-7X-eZu" firstAttribute="top" secondItem="S5I-DO-elm" secondAttribute="bottom" constant="20" id="GPg-iq-BPF"/>
                             <constraint firstItem="S5I-DO-elm" firstAttribute="top" secondItem="GCf-W0-0ir" secondAttribute="bottom" constant="8" id="MtI-Wp-Oun"/>
                             <constraint firstItem="Ktg-7X-eZu" firstAttribute="trailing" secondItem="S5I-DO-elm" secondAttribute="trailing" id="W9D-io-rin"/>
                             <constraint firstItem="4tH-ai-QAB" firstAttribute="top" secondItem="70a-2H-6HI" secondAttribute="bottom" constant="30" id="WEn-wq-qCf"/>
@@ -794,7 +794,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Assignments" width="118" height="157"/>
+        <image name="Bonus" width="118" height="157"/>
         <image name="CheckMark" width="512" height="512"/>
+        <image name="Contact" width="118" height="157"/>
+        <image name="Feedback" width="118" height="157"/>
+        <image name="Lessons" width="118" height="158"/>
+        <image name="MyFeedback" width="118" height="159"/>
         <image name="RedX.svg" width="120" height="120"/>
+        <image name="Start" width="118" height="159"/>
     </resources>
 </document>

@@ -20,7 +20,6 @@
 		7C7D25D21E58C8AC00D7EAF2 /* StartACourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D11E58C8AC00D7EAF2 /* StartACourseVC.swift */; };
 		7C7D25D41E58C8DD00D7EAF2 /* GiveFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D31E58C8DD00D7EAF2 /* GiveFeedbackVC.swift */; };
 		7C7D25D61E58C93200D7EAF2 /* AssignmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */; };
-		7C7D25D81E58C95A00D7EAF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D71E58C95A00D7EAF2 /* ViewController.swift */; };
 		7C7D25DA1E58C9AD00D7EAF2 /* BonusContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		7C7D25D11E58C8AC00D7EAF2 /* StartACourseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartACourseVC.swift; sourceTree = "<group>"; };
 		7C7D25D31E58C8DD00D7EAF2 /* GiveFeedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveFeedbackVC.swift; sourceTree = "<group>"; };
 		7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsVC.swift; sourceTree = "<group>"; };
-		7C7D25D71E58C95A00D7EAF2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonusContentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,18 +76,17 @@
 				7C022EAF1E35B160003F507C /* Assets.xcassets */,
 				7C022EB41E35B160003F507C /* Info.plist */,
 				7C022EAC1E35B160003F507C /* Main.storyboard */,
-				7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */,
-				7C7D25D71E58C95A00D7EAF2 /* ViewController.swift */,
-				7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */,
-				7C7D25D31E58C8DD00D7EAF2 /* GiveFeedbackVC.swift */,
-				7C7D25D11E58C8AC00D7EAF2 /* StartACourseVC.swift */,
-				7C7D25CF1E58C87400D7EAF2 /* ContactInstructorVC.swift */,
-				7C022EB11E35B160003F507C /* LaunchScreen.storyboard */,
-				7C022EAA1E35B160003F507C /* LandingVC.swift */,
-				7C7D25CD1E58C7EC00D7EAF2 /* MyFeedbackVC.swift */,
-				7C7D25C91E58C49C00D7EAF2 /* LessonsVC.swift */,
 				7C16C0671E3EB5DE00558908 /* RegistrationVC.swift */,
+				7C022EAA1E35B160003F507C /* LandingVC.swift */,
 				7C16C0691E3EB62E00558908 /* HomeVC.swift */,
+				7C7D25D31E58C8DD00D7EAF2 /* GiveFeedbackVC.swift */,
+				7C7D25C91E58C49C00D7EAF2 /* LessonsVC.swift */,
+				7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */,
+				7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */,
+				7C7D25CD1E58C7EC00D7EAF2 /* MyFeedbackVC.swift */,
+				7C7D25CF1E58C87400D7EAF2 /* ContactInstructorVC.swift */,
+				7C7D25D11E58C8AC00D7EAF2 /* StartACourseVC.swift */,
+				7C022EB11E35B160003F507C /* LaunchScreen.storyboard */,
 			);
 			path = "Commanding A Room";
 			sourceTree = "<group>";
@@ -171,7 +168,6 @@
 				7C7D25CE1E58C7EC00D7EAF2 /* MyFeedbackVC.swift in Sources */,
 				7C022EA91E35B160003F507C /* AppDelegate.swift in Sources */,
 				7C7D25CA1E58C49C00D7EAF2 /* LessonsVC.swift in Sources */,
-				7C7D25D81E58C95A00D7EAF2 /* ViewController.swift in Sources */,
 				7C7D25DA1E58C9AD00D7EAF2 /* BonusContentVC.swift in Sources */,
 				7C7D25D61E58C93200D7EAF2 /* AssignmentsVC.swift in Sources */,
 				7C7D25D21E58C8AC00D7EAF2 /* StartACourseVC.swift in Sources */,
