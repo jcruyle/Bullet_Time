@@ -1,14 +1,14 @@
 //
-//  HoldVC.swift
+//  ViewController.swift
 //  Commanding A Room
 //
-//  Created by Jessica Saputo on 1/29/17.
+//  Created by Jessica Saputo on 2/18/17.
 //  Copyright © 2017 JCAPPS. All rights reserved.
 //
 
 import UIKit
 
-class HoldVC: UIViewController {
+class BonusContentVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

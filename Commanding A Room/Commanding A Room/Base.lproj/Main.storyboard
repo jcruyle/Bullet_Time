@@ -155,7 +155,7 @@
         <!--RegistrationVC-->
         <scene sceneID="MyQ-Hh-opa">
             <objects>
-                <viewController id="JGP-bA-GfX" userLabel="RegistrationVC" customClass="RegistrationVC" customModule="Commanding_A_Room" sceneMemberID="viewController">
+                <viewController id="JGP-bA-GfX" userLabel="RegistrationVC" customClass="RegistrationVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LFa-WH-2FU"/>
                         <viewControllerLayoutGuide type="bottom" id="9D3-KP-I4S"/>
@@ -464,10 +464,10 @@
             </objects>
             <point key="canvasLocation" x="137" y="838"/>
         </scene>
-        <!--HoldVC-->
+        <!--HomeVC-->
         <scene sceneID="6Hw-aS-2XS">
             <objects>
-                <viewController id="jwH-nv-7aY" userLabel="HoldVC" customClass="HoldVC" sceneMemberID="viewController">
+                <viewController id="jwH-nv-7aY" userLabel="HomeVC" customClass="HomeVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="70a-2H-6HI"/>
                         <viewControllerLayoutGuide type="bottom" id="eI6-Z2-899"/>
@@ -482,10 +482,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87K-0L-33x">
                                         <rect key="frame" x="0.0" y="0.0" width="139.5" height="125"/>
                                         <state key="normal" image="CheckMark"/>
+                                        <connections>
+                                            <segue destination="OtF-Ix-omx" kind="show" id="aa6-zW-TXp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beH-cE-3bR">
                                         <rect key="frame" x="203.5" y="0.0" width="139.5" height="125"/>
                                         <state key="normal" image="RedX.svg"/>
+                                        <connections>
+                                            <segue destination="JgQ-4r-3x5" kind="show" id="UI1-HT-Cpa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -498,10 +504,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-Lb-t8C">
                                         <rect key="frame" x="0.0" y="0.0" width="139.5" height="125"/>
                                         <state key="normal" image="RedX.svg"/>
+                                        <connections>
+                                            <segue destination="mch-6V-2SB" kind="show" id="FkN-x6-BpQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l48-ws-Gav">
                                         <rect key="frame" x="203.5" y="0.0" width="139.5" height="125"/>
                                         <state key="normal" image="CheckMark"/>
+                                        <connections>
+                                            <segue destination="Y0j-lX-Ju0" kind="show" id="lZD-DC-wzc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -514,10 +526,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsS-21-jF5">
                                         <rect key="frame" x="0.0" y="0.0" width="139.5" height="125"/>
                                         <state key="normal" image="CheckMark"/>
+                                        <connections>
+                                            <segue destination="h36-Ht-cAv" kind="show" id="Sjw-wC-S3G"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clS-x6-CR6">
                                         <rect key="frame" x="203.5" y="0.0" width="139.5" height="125"/>
                                         <state key="normal" image="RedX.svg"/>
+                                        <connections>
+                                            <segue destination="FLe-AL-iWj" kind="show" id="ezi-sX-5ZQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -532,6 +550,9 @@
                                 <state key="normal" title="Placeholder Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hlx-uz-nKt" kind="show" id="NF5-a5-bZC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -554,6 +575,222 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oth-RJ-cR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="845.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--BonusContentVC-->
+        <scene sceneID="osu-gI-THK">
+            <objects>
+                <viewController id="Y0j-lX-Ju0" userLabel="BonusContentVC" customClass="BonusContentVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hjm-Jg-SnG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZUj-Sp-MZ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CzR-zC-rTf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bonus Content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ab-IU-tm0">
+                                <rect key="frame" x="20" y="28" width="343" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEX-Zd-g9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="139"/>
+        </scene>
+        <!--MyFeedbackVC-->
+        <scene sceneID="o5Y-yi-I8J">
+            <objects>
+                <viewController id="h36-Ht-cAv" userLabel="MyFeedbackVC" customClass="MyFeedbackVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="07l-5H-Vpy"/>
+                        <viewControllerLayoutGuide type="bottom" id="cTa-Ly-MgJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eTm-DA-GjI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah1-ra-UVE">
+                                <rect key="frame" x="16" y="28" width="343" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaZ-ON-kch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="784"/>
+        </scene>
+        <!--ContactInstructorVC-->
+        <scene sceneID="lMt-fo-ZZK">
+            <objects>
+                <viewController id="FLe-AL-iWj" userLabel="ContactInstructorVC" customClass="ContactInstructorVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="11i-38-Lvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="H59-RK-gph"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="832-Fe-c9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Instructor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9h-CT-bhx">
+                                <rect key="frame" x="16" y="28" width="343" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igg-X4-w9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="1431"/>
+        </scene>
+        <!--StartACourseVC-->
+        <scene sceneID="hLp-JN-ojv">
+            <objects>
+                <viewController id="hlx-uz-nKt" userLabel="StartACourseVC" customClass="StartACourseVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KRY-bE-GGx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Re5-Vy-kpQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9pi-v7-eJu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start A Course" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRn-DF-ZwM">
+                                <rect key="frame" x="20" y="28" width="343" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpO-tx-bMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="2088"/>
+        </scene>
+        <!--GiveFeedbackVC-->
+        <scene sceneID="3ho-E8-MCv">
+            <objects>
+                <viewController id="JgQ-4r-3x5" userLabel="GiveFeedbackVC" customClass="GiveFeedbackVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3F4-Or-3zd"/>
+                        <viewControllerLayoutGuide type="bottom" id="hj9-jq-XSH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hJx-d9-h4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Give Feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iD-BJ-b02">
+                                <rect key="frame" x="20" y="20" width="339" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ZL-vx-Zcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="-1819"/>
+        </scene>
+        <!--LessonsVC-->
+        <scene sceneID="Ngc-Vx-XNp">
+            <objects>
+                <viewController id="OtF-Ix-omx" userLabel="LessonsVC" customClass="LessonsVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bkl-M0-LcH"/>
+                        <viewControllerLayoutGuide type="bottom" id="nt9-VH-NfV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v30-aR-GNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lessons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-bl-Q0E">
+                                <rect key="frame" x="20" y="20" width="339" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgD-k6-7xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="-1168"/>
+        </scene>
+        <!--AssignmentsVC-->
+        <scene sceneID="hM7-Oc-mlj">
+            <objects>
+                <viewController id="mch-6V-2SB" userLabel="AssignmentsVC" customClass="AssignmentsVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Trc-Ei-6MV"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXj-eX-wP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wQF-PA-Lt9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assignments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOu-7n-gil">
+                                <rect key="frame" x="16" y="28" width="339" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7W-0I-x8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="-527.58620689655174"/>
+        </scene>
+        <!--BonusContentVC-->
+        <scene sceneID="k4w-nz-BIu">
+            <objects>
+                <viewController id="g05-Rg-Olc" userLabel="BonusContentVC" customClass="BonusContentVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="suR-fW-RpR"/>
+                        <viewControllerLayoutGuide type="bottom" id="d3a-gp-yJE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="naD-Z9-lrh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BONUS Content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-3w-SJV">
+                                <rect key="frame" x="16" y="28" width="343" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLq-VX-Qgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
