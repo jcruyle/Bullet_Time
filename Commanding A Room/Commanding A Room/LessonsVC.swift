@@ -9,7 +9,17 @@
 import UIKit
 
 class LessonsVC: UIViewController {
+    
 
+    //This is a collection of all the views that make up the menu options
+    @IBOutlet var menuView: [UIView]! {
+        didSet {
+            menuView.forEach {
+                $0.isHidden = true
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +30,44 @@ class LessonsVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func lesson1BtnPressed(_ sender: Any) {
+        hideMenu()
+    }
+    
+    @IBAction func lesson2BtnPressed(_ sender: Any) {
+        hideMenu()
+    }
+    
+    @IBAction func lesson3BtnPressed(_ sender: Any) {
+        hideMenu()
+    }
+    
+    @IBAction func lesson4BtnPressed(_ sender: Any) {
+        hideMenu()
+    }
+    
+    @IBAction func lesson5BtnPressed(_ sender: Any) {
+        hideMenu()
+    }
+    
+    @IBAction func lesson6BtnPressed(_ sender: Any) {
+        hideMenu()
+    }
+    
+    @IBAction func menuBtnPressed(_ sender: Any) {
+        hideMenu()
+    }
+    
+    // Hides & unhides the views that make up the menu options
+    func hideMenu() {
+        UIView.animate(withDuration: 0.2) {
+            self.menuView.forEach {
+                $0.isHidden = !$0.isHidden
+            }
+        }
+    }
+    
     
 
     /*

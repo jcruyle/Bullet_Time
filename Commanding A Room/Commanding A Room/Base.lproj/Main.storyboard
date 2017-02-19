@@ -723,20 +723,179 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lessons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-bl-Q0E">
-                                <rect key="frame" x="20" y="20" width="339" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm" translatesAutoresizingMaskIntoConstraints="NO" id="pEj-V5-Kyd">
+                                <rect key="frame" x="52.5" y="263.5" width="269" height="139"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wpq-Rz-eaA">
+                                <rect key="frame" x="16" y="20" width="206" height="420"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewH-Qn-OWi">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkx-xn-fjQ">
+                                                <rect key="frame" x="67" y="11" width="72" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="⌸ Menu">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="menuBtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="IQx-Ba-tDa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="Bkx-xn-fjQ" firstAttribute="centerX" secondItem="ewH-Qn-OWi" secondAttribute="centerX" id="Ry8-DU-qPu"/>
+                                            <constraint firstAttribute="height" constant="60" id="eJl-Tk-CGI"/>
+                                            <constraint firstItem="Bkx-xn-fjQ" firstAttribute="centerY" secondItem="ewH-Qn-OWi" secondAttribute="centerY" id="rMF-7g-az3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGA-Ov-65g">
+                                        <rect key="frame" x="0.0" y="60" width="206" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df6-ex-pOd">
+                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Lesson 1">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lesson1BtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="8Ub-Cu-SyB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1188009679" green="0.2646297514" blue="0.40401944519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="df6-ex-pOd" firstAttribute="centerY" secondItem="ZGA-Ov-65g" secondAttribute="centerY" id="M3U-O4-mdo"/>
+                                            <constraint firstItem="df6-ex-pOd" firstAttribute="centerX" secondItem="ZGA-Ov-65g" secondAttribute="centerX" id="Xlv-Dv-qqm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-0s-VRB">
+                                        <rect key="frame" x="0.0" y="120" width="206" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-No-oog">
+                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Lesson 2">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lesson2BtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="qEA-Bx-17i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="SMd-No-oog" firstAttribute="centerX" secondItem="yi6-0s-VRB" secondAttribute="centerX" id="3LM-bT-y2b"/>
+                                            <constraint firstItem="SMd-No-oog" firstAttribute="centerY" secondItem="yi6-0s-VRB" secondAttribute="centerY" id="GZw-39-dNH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hif-C6-EfJ">
+                                        <rect key="frame" x="0.0" y="180" width="206" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5r-GI-Wc1">
+                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Lesson 3">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lesson3BtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="r7O-Tg-iAX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="L5r-GI-Wc1" firstAttribute="centerY" secondItem="Hif-C6-EfJ" secondAttribute="centerY" id="Cbi-jC-ELl"/>
+                                            <constraint firstItem="L5r-GI-Wc1" firstAttribute="centerX" secondItem="Hif-C6-EfJ" secondAttribute="centerX" id="QGW-Dm-yfd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMA-2n-q4y">
+                                        <rect key="frame" x="0.0" y="240" width="206" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9r-Ja-Ueo">
+                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Lesson 4">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lesson4BtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="EAn-c9-klI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="f9r-Ja-Ueo" firstAttribute="centerX" secondItem="sMA-2n-q4y" secondAttribute="centerX" id="0dc-T9-PbW"/>
+                                            <constraint firstItem="f9r-Ja-Ueo" firstAttribute="centerY" secondItem="sMA-2n-q4y" secondAttribute="centerY" id="QlF-JD-2ql"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCW-7S-fY9">
+                                        <rect key="frame" x="0.0" y="300" width="206" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4a-Sk-HGL">
+                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Lesson 5">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lesson5BtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="p5A-U2-l2V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="P4a-Sk-HGL" firstAttribute="centerY" secondItem="rCW-7S-fY9" secondAttribute="centerY" id="4Cn-jf-5rH"/>
+                                            <constraint firstItem="P4a-Sk-HGL" firstAttribute="centerX" secondItem="rCW-7S-fY9" secondAttribute="centerX" id="csb-Kz-KGF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79q-Sw-Sm4">
+                                        <rect key="frame" x="0.0" y="360" width="206" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4q-si-fkc">
+                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Lesson 6">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lesson6BtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="V7q-Va-WQU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="N4q-si-fkc" firstAttribute="centerX" secondItem="79q-Sw-Sm4" secondAttribute="centerX" id="DKK-Zc-s7p"/>
+                                            <constraint firstItem="N4q-si-fkc" firstAttribute="centerY" secondItem="79q-Sw-Sm4" secondAttribute="centerY" id="G2f-Jb-wBP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="Obj-iU-wP6"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wpq-Rz-eaA" firstAttribute="leading" secondItem="v30-aR-GNE" secondAttribute="leadingMargin" id="NlX-fc-nPX"/>
+                            <constraint firstItem="pEj-V5-Kyd" firstAttribute="centerX" secondItem="v30-aR-GNE" secondAttribute="centerX" id="n7T-QF-r97"/>
+                            <constraint firstItem="Wpq-Rz-eaA" firstAttribute="top" secondItem="Bkl-M0-LcH" secondAttribute="bottom" id="oyx-KI-gmr"/>
+                            <constraint firstItem="pEj-V5-Kyd" firstAttribute="centerY" secondItem="v30-aR-GNE" secondAttribute="centerY" id="uGm-g3-LTq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="menuView" destination="ZGA-Ov-65g" collectionClass="NSMutableArray" id="wvE-QN-CIS"/>
+                        <outletCollection property="menuView" destination="yi6-0s-VRB" collectionClass="NSMutableArray" id="4M8-br-pgq"/>
+                        <outletCollection property="menuView" destination="Hif-C6-EfJ" collectionClass="NSMutableArray" id="hgQ-CF-XPa"/>
+                        <outletCollection property="menuView" destination="sMA-2n-q4y" collectionClass="NSMutableArray" id="X9h-NI-Mf1"/>
+                        <outletCollection property="menuView" destination="rCW-7S-fY9" collectionClass="NSMutableArray" id="43j-pM-B4n"/>
+                        <outletCollection property="menuView" destination="79q-Sw-Sm4" collectionClass="NSMutableArray" id="c9D-oF-4zH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgD-k6-7xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="-1168"/>
+            <point key="canvasLocation" x="1628" y="-1168.0659670164919"/>
         </scene>
         <!--AssignmentsVC-->
         <scene sceneID="hM7-Oc-mlj">
@@ -803,5 +962,6 @@
         <image name="MyFeedback" width="118" height="159"/>
         <image name="RedX.svg" width="120" height="120"/>
         <image name="Start" width="118" height="159"/>
+        <image name="cm" width="269" height="139"/>
     </resources>
 </document>
