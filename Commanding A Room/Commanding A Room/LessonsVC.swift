@@ -19,6 +19,9 @@ class LessonsVC: UIViewController {
             }
         }
     }
+    @IBOutlet weak var cmImage: UIImageView!
+    @IBOutlet weak var lessonScrollView: UIView!
+    @IBOutlet weak var lesson1text: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +36,16 @@ class LessonsVC: UIViewController {
     
     @IBAction func lesson1BtnPressed(_ sender: Any) {
         hideMenu()
+        cmImage.isHidden = true
+        lessonScrollView.isHidden = false
+        lesson1text.isHidden = false
     }
     
     @IBAction func lesson2BtnPressed(_ sender: Any) {
         hideMenu()
+        cmImage.isHidden = true
+        lessonScrollView.isHidden = false
+        lesson1text.isHidden = true
     }
     
     @IBAction func lesson3BtnPressed(_ sender: Any) {
@@ -57,6 +66,9 @@ class LessonsVC: UIViewController {
     
     @IBAction func menuBtnPressed(_ sender: Any) {
         hideMenu()
+        cmImage.isHidden = false
+        lessonScrollView.isHidden = false
+        lesson1text.isHidden = true
     }
     
     // Hides & unhides the views that make up the menu options
