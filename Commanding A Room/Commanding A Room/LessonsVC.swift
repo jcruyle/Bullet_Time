@@ -50,18 +50,22 @@ class LessonsVC: UIViewController {
     
     @IBAction func lesson3BtnPressed(_ sender: Any) {
         hideMenu()
+        cmImage.isHidden = true
     }
     
     @IBAction func lesson4BtnPressed(_ sender: Any) {
         hideMenu()
+        cmImage.isHidden = true
     }
     
     @IBAction func lesson5BtnPressed(_ sender: Any) {
         hideMenu()
+        cmImage.isHidden = true
     }
     
     @IBAction func lesson6BtnPressed(_ sender: Any) {
         hideMenu()
+        cmImage.isHidden = true
     }
     
     @IBAction func menuBtnPressed(_ sender: Any) {
@@ -80,6 +84,9 @@ class LessonsVC: UIViewController {
         }
     }
     
+    @IBAction func homeBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
 
     /*
