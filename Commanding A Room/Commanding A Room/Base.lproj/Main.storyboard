@@ -725,23 +725,251 @@
                         <viewControllerLayoutGuide type="bottom" id="nt9-VH-NfV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v30-aR-GNE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm" translatesAutoresizingMaskIntoConstraints="NO" id="pEj-V5-Kyd">
-                                <rect key="frame" x="53" y="931" width="269" height="139"/>
+                                <rect key="frame" x="53" y="845" width="269" height="139"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9f-Fb-bmO">
-                                <rect key="frame" x="5" y="128" width="362" height="1864"/>
+                                <rect key="frame" x="5" y="128" width="362" height="1693"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxg-AY-rEo">
                                         <rect key="frame" x="8" y="8" width="354" height="2000"/>
                                         <subviews>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDI-lp-nBz">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="1298.5"/>
-                                                <string key="text">This is to test the UIScrollView functionality...   fdjf;aldskjfa;ldjf;lkasdjfadsfja;dsjfdfa;s dfadkfja;djlkfa;sdfjka  jfa;ldkjfakfjakldsjfajdsflajdklfajdslkfjalksdjfklasdjgklahdskfhasdkfhalksdjflajdsfkljalsdfjalksdjflasjdlkfjasdlfalkdsjf  ;kdjf;alksdjflkajsd;fklajsd;lkfjasd;lkfjal;ksdjfl;aksdjflkasjdflkajsd;fjasd;lkfjaslkdjfa;lksdjf;lkasdjflkasjdflkjasd;lkfja;lksdjfa;lksdj;flrejhafha;sf  dfaj;sdjfa;lsdkjfaklsdjfasdjfa;sdkljfasdifja;lskdfja;lskdjfasdkjfa;sdjfal;skdjf;asdjfa;sdjkfal;sdkfsajs;dlfjkasdfjka;sdlkfja;lsdkjfa;lsdkjfklasdjf;alksdjf;laksdjf;alskdjfas;d  Joe is a great "chartist"...                         Ninja you made it!   </string>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDI-lp-nBz">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="1664.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="               ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Tips &amp; Tricks">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="22" name="Futura-CondensedExtraBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="   Practice">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> We don't mean formal, rigid, perfection seeking practice here. Imagine what you will say and what points you need to make. Practice by talking to yourself  </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Breathe!">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" Most of us run out of breath when we talk too fast or get nervous. Pause, take a breath, and get back at it!  ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Hear Yourself">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" Hear the words before you say them. Speak slowly. Pause. That will help prevent trigger words and control breathing  ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Drink it Up">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> Use water as a crutch. When you get out of breath, make a mistake, or lose your train of thought, take a drink and reset. ( This is Bobbi's secret weapon </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="; )">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.2210529" green="0.50434702629999995" blue="0.61967551710000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" )  ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Plant Yourself">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" To help &quot;move with purpose&quot; you need to walk to another area of the room and then ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="PLANT">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.72549019609999998" green="0.82745098039999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-CondensedExtraBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" yourself. When you think about planing yourself firmly, you avoid swaying and pacing.  ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Close the Deal">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> "What questions do you have for me?", "Thanks for your time. Any questions?". Think about the pros and cons of each. When asking for questions, make sure you've considered what they might be.  </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Don't get Too Handsy... ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Be mindful of what you have in your hand. It can be more distracting than anything else. Pens or paper can be your worst enemy.  </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Focus on the Audience">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" Make the presentation about ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="them">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.72549019609999998" green="0.82745098039999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-MediumItalic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> - not you. Make sure you are getting your point across and helping your audience to get there. - You already get this stuff, that's why your presenting.  </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Back to School">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" Just like any paper you wrote in school, your presentations (even simple ones) should have an">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" intro">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.72549019609999998" green="0.82745098039999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-CondensedMedium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="body">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.72549019609999998" green="0.82745098039999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-CondensedMedium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" and ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="conclusion">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.72549019609999998" green="0.82745098039999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name="Futura-CondensedMedium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=". Your points should tie together and have a logical, cohesive connections.">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="20" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -756,8 +984,8 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bxg-AY-rEo" secondAttribute="bottom" constant="-315" id="D6E-2t-toL"/>
                                     <constraint firstItem="bxg-AY-rEo" firstAttribute="top" secondItem="H9f-Fb-bmO" secondAttribute="topMargin" id="MWB-d0-Wn7"/>
-                                    <constraint firstAttribute="bottom" secondItem="bxg-AY-rEo" secondAttribute="bottom" constant="856" id="NBA-VR-e6l"/>
                                     <constraint firstItem="bxg-AY-rEo" firstAttribute="leading" secondItem="H9f-Fb-bmO" secondAttribute="leadingMargin" id="hSe-fE-zec"/>
                                     <constraint firstAttribute="trailing" secondItem="bxg-AY-rEo" secondAttribute="trailing" id="m37-4t-ytW"/>
                                 </constraints>
@@ -789,10 +1017,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGA-Ov-65g">
                                         <rect key="frame" x="0.0" y="60" width="206" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df6-ex-pOd">
-                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df6-ex-pOd" userLabel="Lesson 1">
+                                                <rect key="frame" x="47" y="11" width="112" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                <state key="normal" title="Lesson 1">
+                                                <state key="normal" title="Tips &amp; Tricks">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -927,9 +1155,11 @@
                                     <constraint firstAttribute="width" constant="89" id="lvD-K4-TtJ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVa-Vh-XkU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVa-Vh-XkU">
                                 <rect key="frame" x="325" y="20" width="50" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="sWp-7N-fbC"/>
+                                </constraints>
                                 <state key="normal" image="Home"/>
                                 <connections>
                                     <action selector="homeBtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="dhn-O4-V2z"/>
@@ -938,23 +1168,26 @@
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="H9f-Fb-bmO" firstAttribute="top" secondItem="BVa-Vh-XkU" secondAttribute="bottom" constant="40" id="10k-et-fo8"/>
                             <constraint firstItem="Cjw-v8-Uy9" firstAttribute="trailing" secondItem="v30-aR-GNE" secondAttribute="trailingMargin" id="3Ci-MS-Dzl"/>
                             <constraint firstItem="jfh-Lk-Dk0" firstAttribute="top" secondItem="Bkl-M0-LcH" secondAttribute="bottom" constant="14" id="BaI-n1-Hsu"/>
                             <constraint firstItem="Cjw-v8-Uy9" firstAttribute="top" secondItem="Bkl-M0-LcH" secondAttribute="bottom" id="DcN-Ov-GmW"/>
                             <constraint firstItem="nt9-VH-NfV" firstAttribute="top" secondItem="H9f-Fb-bmO" secondAttribute="bottom" constant="8" id="FiD-Nh-VYP"/>
                             <constraint firstItem="Wpq-Rz-eaA" firstAttribute="leading" secondItem="v30-aR-GNE" secondAttribute="leadingMargin" id="NlX-fc-nPX"/>
                             <constraint firstItem="H9f-Fb-bmO" firstAttribute="top" secondItem="jfh-Lk-Dk0" secondAttribute="bottom" constant="68" id="Wl2-IS-Fqv"/>
+                            <constraint firstAttribute="trailing" secondItem="BVa-Vh-XkU" secondAttribute="trailing" id="Yy0-Sz-yTs"/>
                             <constraint firstItem="Cjw-v8-Uy9" firstAttribute="leading" secondItem="v30-aR-GNE" secondAttribute="leadingMargin" id="brg-As-h7R"/>
                             <constraint firstItem="jfh-Lk-Dk0" firstAttribute="leading" secondItem="v30-aR-GNE" secondAttribute="leadingMargin" constant="65" id="kGo-UT-ZUw"/>
                             <constraint firstItem="H9f-Fb-bmO" firstAttribute="leading" secondItem="v30-aR-GNE" secondAttribute="leading" constant="5" id="kPy-b4-yYh"/>
                             <constraint firstItem="pEj-V5-Kyd" firstAttribute="centerX" secondItem="v30-aR-GNE" secondAttribute="centerX" id="n7T-QF-r97"/>
                             <constraint firstItem="Wpq-Rz-eaA" firstAttribute="top" secondItem="Bkl-M0-LcH" secondAttribute="bottom" constant="40" id="oyx-KI-gmr"/>
                             <constraint firstAttribute="trailing" secondItem="H9f-Fb-bmO" secondAttribute="trailing" constant="8" id="r9X-iw-PY2"/>
+                            <constraint firstItem="BVa-Vh-XkU" firstAttribute="top" secondItem="Cjw-v8-Uy9" secondAttribute="top" id="rnP-nv-jII"/>
                             <constraint firstItem="pEj-V5-Kyd" firstAttribute="centerY" secondItem="v30-aR-GNE" secondAttribute="centerY" id="uGm-g3-LTq"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="2000"/>
+                    <size key="freeformSize" width="375" height="1829"/>
                     <connections>
                         <outlet property="cmImage" destination="pEj-V5-Kyd" id="1F6-JS-cwc"/>
                         <outlet property="lesson1text" destination="gDI-lp-nBz" id="apc-FS-JE6"/>
@@ -969,7 +1202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgD-k6-7xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269.5999999999999" y="-1167.616191904048"/>
+            <point key="canvasLocation" x="2269.5999999999999" y="-1168.0659670164919"/>
         </scene>
         <!--AssignmentsVC-->
         <scene sceneID="hM7-Oc-mlj">
