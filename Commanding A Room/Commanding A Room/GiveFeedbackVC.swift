@@ -9,10 +9,13 @@
 import UIKit
 
 class GiveFeedbackVC: UIViewController {
-
+    
+    @IBOutlet weak var useTheSpaceText: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+ 
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +24,19 @@ class GiveFeedbackVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func useTheSpaceBtnPressed(_ sender: Any) {
+        colorSwap()
+    }
+    
+    func colorSwap() {
+        if useTheSpaceText.currentTitleColor == UIColor.init(red: 160.0/255.0, green: 207.0/255.0, blue: 103.0/255.0, alpha: 1.0) {
+            useTheSpaceText.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            useTheSpaceText.setTitleColor(UIColor.init(red: 160.0/255.0, green: 207.0/255.0, blue: 103.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+
+        
+    }
 
     /*
     // MARK: - Navigation
