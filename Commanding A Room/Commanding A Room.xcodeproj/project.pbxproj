@@ -21,7 +21,6 @@
 		7C7D25D41E58C8DD00D7EAF2 /* GiveFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D31E58C8DD00D7EAF2 /* GiveFeedbackVC.swift */; };
 		7C7D25D61E58C93200D7EAF2 /* AssignmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */; };
 		7C7D25DA1E58C9AD00D7EAF2 /* BonusContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */; };
-		7CCBBE7D1E92F2AE00A341F8 /* Commanding A Room.app in Resources */ = {isa = PBXBuildFile; fileRef = 7C022EA51E35B160003F507C /* Commanding A Room.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,7 +153,6 @@
 				7C022EB31E35B160003F507C /* LaunchScreen.storyboard in Resources */,
 				7C022EB01E35B160003F507C /* Assets.xcassets in Resources */,
 				7C022EAE1E35B160003F507C /* Main.storyboard in Resources */,
-				7CCBBE7D1E92F2AE00A341F8 /* Commanding A Room.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
