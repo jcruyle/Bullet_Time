@@ -73,6 +73,8 @@
 		7C022EA71E35B160003F507C /* Commanding A Room */ = {
 			isa = PBXGroup;
 			children = (
+				EAC3BF3A1E9C18090075531E /* View */,
+				EAC3BF391E9C17FC0075531E /* Model */,
 				7C022EA81E35B160003F507C /* AppDelegate.swift */,
 				7C022EAF1E35B160003F507C /* Assets.xcassets */,
 				7C022EB41E35B160003F507C /* Info.plist */,
@@ -90,6 +92,20 @@
 				7C022EB11E35B160003F507C /* LaunchScreen.storyboard */,
 			);
 			path = "Commanding A Room";
+			sourceTree = "<group>";
+		};
+		EAC3BF391E9C17FC0075531E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EAC3BF3A1E9C18090075531E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
