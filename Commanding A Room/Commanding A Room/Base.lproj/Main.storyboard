@@ -689,10 +689,31 @@
                             <constraint firstItem="8ab-IU-tm0" firstAttribute="top" secondItem="Hjm-Jg-SnG" secondAttribute="bottom" constant="8" id="zZr-b5-mT4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="uV3-es-Naa" kind="showDetail" id="D1q-IM-N3w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEX-Zd-g9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1628" y="138.98050974512745"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="2mt-UH-Oqt">
+            <objects>
+                <viewController id="uV3-es-Naa" customClass="VideoVC" customModule="Commanding_A_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AjS-km-wg3"/>
+                        <viewControllerLayoutGuide type="bottom" id="wvS-g5-Aym"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gka-nR-fEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93I-3N-WdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2439" y="139"/>
         </scene>
         <!--MyFeedbackVC-->
         <scene sceneID="o5Y-yi-I8J">
