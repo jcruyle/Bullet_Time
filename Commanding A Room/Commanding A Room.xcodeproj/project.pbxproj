@@ -123,6 +123,7 @@
 				TargetAttributes = {
 					7C022EA41E35B160003F507C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 85792MJYWR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -296,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85792MJYWR;
 				INFOPLIST_FILE = "Commanding A Room/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JCAPPS.Commanding-A-Room";
@@ -308,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85792MJYWR;
 				INFOPLIST_FILE = "Commanding A Room/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JCAPPS.Commanding-A-Room";
