@@ -38,17 +38,21 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var selectPresenterPicker: UIPickerView!
     @IBOutlet weak var selectAssignmentPicker: UIPickerView!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var averageScore: UIButton!
+    @IBOutlet weak var cat1Score: UITextField!
+    @IBOutlet weak var cat4Score: UITextField!
+    @IBOutlet weak var cat2Score: UITextField!
+    @IBOutlet weak var cat5Score: UITextField!
     
-    let assignment = ["1", "2", "3", "4"]
+    let assignment = ["DEMO", "3 Interesting Facts", "???", "Group Presentation"]
     let presenter = ["Joe", "Dave", "James"]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         selectPresenterPicker.dataSource = self
         selectPresenterPicker.delegate = self
         selectAssignmentPicker.dataSource = self
         selectAssignmentPicker.delegate = self
-        
         
         // Do any additional setup after loading the view.
     }
@@ -57,7 +61,6 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     @IBAction func selectPresenterBtnPressed(_ sender: Any) {
         selectPresenterPicker.isHidden = false
