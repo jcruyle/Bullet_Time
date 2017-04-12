@@ -21,6 +21,10 @@
 		7C7D25D41E58C8DD00D7EAF2 /* GiveFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D31E58C8DD00D7EAF2 /* GiveFeedbackVC.swift */; };
 		7C7D25D61E58C93200D7EAF2 /* AssignmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */; };
 		7C7D25DA1E58C9AD00D7EAF2 /* BonusContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */; };
+
+    7CCBBE7D1E92F2AE00A341F8 /* Commanding A Room.app in Resources */ = {isa = PBXBuildFile; fileRef = 7C022EA51E35B160003F507C /* Commanding A Room.app */; };
+		EAC3BF3C1E9C193F0075531E /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3BF3B1E9C193F0075531E /* VideoVC.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,7 @@
 		7C7D25D31E58C8DD00D7EAF2 /* GiveFeedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveFeedbackVC.swift; sourceTree = "<group>"; };
 		7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsVC.swift; sourceTree = "<group>"; };
 		7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonusContentVC.swift; sourceTree = "<group>"; };
+		EAC3BF3B1E9C193F0075531E /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,8 @@
 		7C022EA71E35B160003F507C /* Commanding A Room */ = {
 			isa = PBXGroup;
 			children = (
+				EAC3BF3A1E9C18090075531E /* View */,
+				EAC3BF391E9C17FC0075531E /* Model */,
 				7C022EA81E35B160003F507C /* AppDelegate.swift */,
 				7C022EAF1E35B160003F507C /* Assets.xcassets */,
 				7C022EB41E35B160003F507C /* Info.plist */,
@@ -87,8 +94,23 @@
 				7C7D25CF1E58C87400D7EAF2 /* ContactInstructorVC.swift */,
 				7C7D25D11E58C8AC00D7EAF2 /* StartACourseVC.swift */,
 				7C022EB11E35B160003F507C /* LaunchScreen.storyboard */,
+				EAC3BF3B1E9C193F0075531E /* VideoVC.swift */,
 			);
 			path = "Commanding A Room";
+			sourceTree = "<group>";
+		};
+		EAC3BF391E9C17FC0075531E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EAC3BF3A1E9C18090075531E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC3BF3C1E9C193F0075531E /* VideoVC.swift in Sources */,
 				7C7D25D41E58C8DD00D7EAF2 /* GiveFeedbackVC.swift in Sources */,
 				7C022EAB1E35B160003F507C /* LandingVC.swift in Sources */,
 				7C7D25CE1E58C7EC00D7EAF2 /* MyFeedbackVC.swift in Sources */,
