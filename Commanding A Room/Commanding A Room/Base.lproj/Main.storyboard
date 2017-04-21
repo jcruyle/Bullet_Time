@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -349,7 +349,7 @@
                             </button>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OyW-Za-VNx" userLabel="clasIDPicker">
                                 <rect key="frame" x="173" y="376" width="145" height="118"/>
-                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="AKc-0f-maR"/>
@@ -358,7 +358,7 @@
                             </pickerView>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eb4-zg-VWV" userLabel="rolePicker">
                                 <rect key="frame" x="173" y="420" width="145" height="118"/>
-                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="pz3-6T-S60"/>
@@ -644,7 +644,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kfT-Dx-Zph" id="MJH-Fa-hTw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0O8-mX-HXi">
@@ -1543,10 +1543,17 @@
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="   Practice">
+                                                    <fragment content="   ">
                                                         <attributes>
                                                             <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" metaFont="system" size="20"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Practice">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="20" name=".SFNSDisplay"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -1695,7 +1702,7 @@
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <string key="content"> - not you. Make sure you are getting your point across and helping your audience to get there. - You already get this stuff, that's why your presenting.  </string>
+                                                        <string key="content"> - not you. Make sure you are getting your point across and helping your audience to get there. - You already get this stuff, that's why you're presenting.  </string>
                                                         <attributes>
                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="20" name="Futura-Medium"/>
@@ -1786,7 +1793,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="206" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkx-xn-fjQ">
-                                                <rect key="frame" x="67" y="11" width="72" height="38"/>
+                                                <rect key="frame" x="8" y="11" width="72" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="⌸ Menu">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1798,7 +1805,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="Bkx-xn-fjQ" firstAttribute="centerX" secondItem="ewH-Qn-OWi" secondAttribute="centerX" id="Ry8-DU-qPu"/>
+                                            <constraint firstItem="Bkx-xn-fjQ" firstAttribute="leading" secondItem="ewH-Qn-OWi" secondAttribute="leading" constant="8" id="DzT-7r-g0g"/>
                                             <constraint firstAttribute="height" constant="60" id="eJl-Tk-CGI"/>
                                             <constraint firstItem="Bkx-xn-fjQ" firstAttribute="centerY" secondItem="ewH-Qn-OWi" secondAttribute="centerY" id="rMF-7g-az3"/>
                                         </constraints>
@@ -1807,7 +1814,7 @@
                                         <rect key="frame" x="0.0" y="60" width="206" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df6-ex-pOd" userLabel="Lesson 1">
-                                                <rect key="frame" x="47" y="11" width="112" height="38"/>
+                                                <rect key="frame" x="8" y="11" width="112" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="Tips &amp; Tricks">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1820,14 +1827,14 @@
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="df6-ex-pOd" firstAttribute="centerY" secondItem="ZGA-Ov-65g" secondAttribute="centerY" id="M3U-O4-mdo"/>
-                                            <constraint firstItem="df6-ex-pOd" firstAttribute="centerX" secondItem="ZGA-Ov-65g" secondAttribute="centerX" id="Xlv-Dv-qqm"/>
+                                            <constraint firstItem="df6-ex-pOd" firstAttribute="leading" secondItem="ZGA-Ov-65g" secondAttribute="leading" constant="8" id="VkW-Ma-msa"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-0s-VRB">
                                         <rect key="frame" x="0.0" y="120" width="206" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-No-oog">
-                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <rect key="frame" x="8" y="11" width="78" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="Lesson 2">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1839,15 +1846,15 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="SMd-No-oog" firstAttribute="centerX" secondItem="yi6-0s-VRB" secondAttribute="centerX" id="3LM-bT-y2b"/>
                                             <constraint firstItem="SMd-No-oog" firstAttribute="centerY" secondItem="yi6-0s-VRB" secondAttribute="centerY" id="GZw-39-dNH"/>
+                                            <constraint firstItem="SMd-No-oog" firstAttribute="leading" secondItem="yi6-0s-VRB" secondAttribute="leading" constant="8" id="zTV-xh-aRT"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hif-C6-EfJ">
                                         <rect key="frame" x="0.0" y="180" width="206" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5r-GI-Wc1">
-                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <rect key="frame" x="8" y="11" width="78" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="Lesson 3">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1860,14 +1867,14 @@
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="L5r-GI-Wc1" firstAttribute="centerY" secondItem="Hif-C6-EfJ" secondAttribute="centerY" id="Cbi-jC-ELl"/>
-                                            <constraint firstItem="L5r-GI-Wc1" firstAttribute="centerX" secondItem="Hif-C6-EfJ" secondAttribute="centerX" id="QGW-Dm-yfd"/>
+                                            <constraint firstItem="L5r-GI-Wc1" firstAttribute="leading" secondItem="Hif-C6-EfJ" secondAttribute="leading" constant="8" id="Eov-eg-B9I"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMA-2n-q4y">
                                         <rect key="frame" x="0.0" y="240" width="206" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9r-Ja-Ueo">
-                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <rect key="frame" x="8" y="11" width="78" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="Lesson 4">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1879,15 +1886,15 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="f9r-Ja-Ueo" firstAttribute="centerX" secondItem="sMA-2n-q4y" secondAttribute="centerX" id="0dc-T9-PbW"/>
                                             <constraint firstItem="f9r-Ja-Ueo" firstAttribute="centerY" secondItem="sMA-2n-q4y" secondAttribute="centerY" id="QlF-JD-2ql"/>
+                                            <constraint firstItem="f9r-Ja-Ueo" firstAttribute="leading" secondItem="sMA-2n-q4y" secondAttribute="leading" constant="8" id="z6i-z6-pV9"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCW-7S-fY9">
                                         <rect key="frame" x="0.0" y="300" width="206" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4a-Sk-HGL">
-                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <rect key="frame" x="8" y="11" width="78" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="Lesson 5">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1900,14 +1907,14 @@
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="P4a-Sk-HGL" firstAttribute="centerY" secondItem="rCW-7S-fY9" secondAttribute="centerY" id="4Cn-jf-5rH"/>
-                                            <constraint firstItem="P4a-Sk-HGL" firstAttribute="centerX" secondItem="rCW-7S-fY9" secondAttribute="centerX" id="csb-Kz-KGF"/>
+                                            <constraint firstItem="P4a-Sk-HGL" firstAttribute="leading" secondItem="rCW-7S-fY9" secondAttribute="leading" constant="8" id="QB9-Fh-Ttb"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79q-Sw-Sm4">
                                         <rect key="frame" x="0.0" y="360" width="206" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4q-si-fkc">
-                                                <rect key="frame" x="64" y="11" width="78" height="38"/>
+                                                <rect key="frame" x="8" y="11" width="78" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="Lesson 6">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1919,8 +1926,8 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="N4q-si-fkc" firstAttribute="centerX" secondItem="79q-Sw-Sm4" secondAttribute="centerX" id="DKK-Zc-s7p"/>
                                             <constraint firstItem="N4q-si-fkc" firstAttribute="centerY" secondItem="79q-Sw-Sm4" secondAttribute="centerY" id="G2f-Jb-wBP"/>
+                                            <constraint firstItem="N4q-si-fkc" firstAttribute="leading" secondItem="79q-Sw-Sm4" secondAttribute="leading" constant="8" id="QlM-Yp-nLA"/>
                                         </constraints>
                                     </view>
                                 </subviews>
