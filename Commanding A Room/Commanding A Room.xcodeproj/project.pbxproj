@@ -182,7 +182,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC3BF3C1E9C193F0075531E /* VideoVC.swift in Sources */,
 				7C7D25D41E58C8DD00D7EAF2 /* GiveFeedbackVC.swift in Sources */,
 				7C022EAB1E35B160003F507C /* LandingVC.swift in Sources */,
 				7C7D25CE1E58C7EC00D7EAF2 /* MyFeedbackVC.swift in Sources */,
