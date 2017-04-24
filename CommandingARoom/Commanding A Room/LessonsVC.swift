@@ -28,6 +28,15 @@ class LessonsVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillDisappear(_ animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController) {
+            UIDevice.current.setValue(Int(UIInterfaceOrientation.portrait.rawValue), forKey: "orientation")
+        }
+    }
+    
+    func canRotate() -> Void {}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class RegistrationVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var clasIDPicker: UIPickerView!
     @IBOutlet weak var clasIDPickerBtn: UIButton!
@@ -20,6 +20,7 @@ class RegistrationVC: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var userIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     let clasID = ["Test-001", "Test-002", "Test-003"]
     let role = ["Student", "Instructor"]
@@ -30,11 +31,33 @@ class RegistrationVC: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         clasIDPicker.delegate = self
         rolePicker.dataSource = self
         rolePicker.delegate = self
+        BBanfield.delegate = self
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
+        userIDTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
+        emailTextField.delegate = self
         
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        BBanfield.resignFirstResponder()
+        firstNameTextField.resignFirstResponder()
+        lastNameTextField.resignFirstResponder()
+        userIDTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        confirmPasswordTextField.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+        return true
     }
     
     @IBAction func clasIDPickerBtnPressed(_ sender: Any) {
