@@ -1477,8 +1477,11 @@
                         <outlet property="button" destination="uYx-rh-qOA" id="Hlj-CD-7cW"/>
                         <outlet property="cat1Score" destination="V1V-oC-iOa" id="qs7-9c-oXX"/>
                         <outlet property="cat2Score" destination="5nl-9h-bkO" id="D2O-r0-eTj"/>
+                        <outlet property="cat3Score" destination="N4x-8U-jft" id="dsW-6D-MnU"/>
                         <outlet property="cat4Score" destination="hO0-fO-O5I" id="Gjx-Km-8Lp"/>
                         <outlet property="cat5Score" destination="OKk-QP-kV6" id="Sf2-em-QKd"/>
+                        <outlet property="cat6Score" destination="5Aq-Bf-mM6" id="12s-S6-XSR"/>
+                        <outlet property="constructiveFeedback" destination="py9-D1-xhB" id="jKg-G7-mYy"/>
                         <outlet property="dictionBtn" destination="yvm-Nl-vbd" id="cfk-g9-GH7"/>
                         <outlet property="eyeContactBtn" destination="FfS-7q-9H2" id="fu5-fG-Rrg"/>
                         <outlet property="facialCuesBtn" destination="mlp-o0-Cef" id="JP6-gE-VET"/>
@@ -1490,6 +1493,7 @@
                         <outlet property="middleStack" destination="pDz-FI-XPh" id="8vv-bP-GPV"/>
                         <outlet property="paceBtn" destination="jCC-d0-MaB" id="VEO-hF-fnf"/>
                         <outlet property="performance" destination="Bnw-0f-cnC" id="FNW-dV-Ug2"/>
+                        <outlet property="positiveFeedback" destination="Rxw-Xz-Lxd" id="yH6-W8-qrM"/>
                         <outlet property="selectAssignmentBtn" destination="d1g-ta-UFf" id="EJO-jb-vkq"/>
                         <outlet property="selectAssignmentPicker" destination="W9p-vi-KR6" id="iJO-ha-GCn"/>
                         <outlet property="selectPresenterBtn" destination="vfv-fR-l7a" id="TcO-GP-oje"/>

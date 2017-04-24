@@ -43,6 +43,10 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var cat4Score: UITextField!
     @IBOutlet weak var cat2Score: UITextField!
     @IBOutlet weak var cat5Score: UITextField!
+    @IBOutlet weak var cat3Score: UITextField!
+    @IBOutlet weak var cat6Score: UITextField!
+    @IBOutlet weak var positiveFeedback: UITextView!
+    @IBOutlet weak var constructiveFeedback: UITextView!
     
     let assignment = ["DEMO", "3 Interesting Facts", "???", "Group Presentation"]
     let presenter = ["Joe", "Dave", "James"]
@@ -53,6 +57,20 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         selectPresenterPicker.delegate = self
         selectAssignmentPicker.dataSource = self
         selectAssignmentPicker.delegate = self
+    
+        //adds a button to the keyboard
+    let kb = UIToolbar()
+        kb.sizeToFit()
+    let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneClick))
+            kb.items = [doneButton]
+        cat1Score.inputAccessoryView = kb
+        cat2Score.inputAccessoryView = kb
+        cat3Score.inputAccessoryView = kb
+        cat4Score.inputAccessoryView = kb
+        cat5Score.inputAccessoryView = kb
+        cat6Score.inputAccessoryView = kb
+        positiveFeedback.inputAccessoryView = kb
+        constructiveFeedback.inputAccessoryView = kb
         
         // Do any additional setup after loading the view.
     }
@@ -60,6 +78,10 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+        //uses button added to dismiss keyboard
+    func doneClick() {
+        self.view.endEditing(true)
     }
     
     @IBAction func selectPresenterBtnPressed(_ sender: Any) {
