@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextViewDelegate {
     
     //Created outlets for all btns to change the title color when selected
     @IBOutlet weak var useTheSpaceBtn: UIButton!
@@ -47,6 +47,23 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var cat6Score: UITextField!
     @IBOutlet weak var positiveFeedback: UITextView!
     @IBOutlet weak var constructiveFeedback: UITextView!
+    @IBOutlet weak var tone2Btn: UIButton!
+    @IBOutlet weak var pace2Btn: UIButton!
+    @IBOutlet weak var volume2Btn: UIButton!
+    @IBOutlet weak var triggerWords2Btn: UIButton!
+    @IBOutlet weak var eyeContact2Btn: UIButton!
+    @IBOutlet weak var gestures2Btn: UIButton!
+    @IBOutlet weak var facialCues2Btn: UIButton!
+    @IBOutlet weak var useTheSpace2Btn: UIButton!
+    @IBOutlet weak var intro2Btn: UIButton!
+    @IBOutlet weak var holdingInterest2Btn: UIButton!
+    @IBOutlet weak var structure2Btn: UIButton!
+    @IBOutlet weak var closing2Btn: UIButton!
+    @IBOutlet weak var flow2Btn: UIButton!
+    @IBOutlet weak var diction2Btn: UIButton!
+    @IBOutlet weak var gumpItDown2Btn: UIButton!
+    @IBOutlet weak var time2Btn: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     let assignment = ["DEMO", "3 Interesting Facts", "???", "Group Presentation"]
     let presenter = ["Joe", "Dave", "James"]
@@ -57,6 +74,7 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         selectPresenterPicker.delegate = self
         selectAssignmentPicker.dataSource = self
         selectAssignmentPicker.delegate = self
+        constructiveFeedback.delegate = self
     
         //adds a button to the keyboard
     let kb = UIToolbar()
@@ -297,6 +315,145 @@ class GiveFeedbackVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             dictionBtn.setTitleColor(UIColor.init(red: 160.0/255.0, green: 207.0/255.0, blue: 103.0/255.0, alpha: 1.0), for: UIControlState.normal)
         }
     }
+    
+    @IBAction func tone2BtnPressed(_ sender: Any) {
+        if tone2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            tone2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            tone2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func pace2BtnPressed(_ sender: Any) {
+        if pace2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            pace2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            pace2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func volume2BtnPressed(_ sender: Any) {
+        if volume2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            volume2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            volume2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func triggerWords2BtnPressed(_ sender: Any) {
+        if triggerWords2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            triggerWords2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            triggerWords2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func eyeContact2BtnPressed(_ sender: Any) {
+        if eyeContact2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            eyeContact2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            eyeContact2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func gestures2BtnPressed(_ sender: Any) {
+        if gestures2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            gestures2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            gestures2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func facialCues2BtnPressed(_ sender: Any) {
+        if facialCues2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            facialCues2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            facialCues2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func useTheSpace2BtnPressed(_ sender: Any) {
+        if useTheSpace2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            useTheSpace2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            useTheSpace2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func intro2BtnPressed(_ sender: Any) {
+        if intro2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            intro2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            intro2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func holdingInterest2BtnPressed(_ sender: Any) {
+        if holdingInterest2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            holdingInterest2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            holdingInterest2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func structure2BtnPressed(_ sender: Any) {
+        if structure2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            structure2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            structure2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func closing2BtnPressed(_ sender: Any) {
+        if closing2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            closing2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            closing2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func flow2BtnPressed(_ sender: Any) {
+        if flow2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            flow2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            flow2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func diction2BtnPressed(_ sender: Any) {
+        if diction2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            diction2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            diction2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func gumpItDown2BtnPressed(_ sender: Any) {
+        if gumpItDown2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            gumpItDown2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            gumpItDown2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    @IBAction func time2BtnPressed(_ sender: Any) {
+        if time2Btn.currentTitleColor == UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0) {
+            time2Btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        } else {
+            time2Btn.setTitleColor(UIColor.init(red: 234.0/255.0, green: 51.0/255.0, blue: 56.0/255.0, alpha: 1.0), for: UIControlState.normal)
+        }
+    }
+    
+    //moves scrollView up so that the keyboard isn't covering the textView
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        scrollView.setContentOffset(CGPoint(x:0, y:1000), animated: true)
+    }
+    
+    //moves scrollView back on edit completion
+    func textViewDidEndEditing(_ textView: UITextView) {
+        scrollView.setContentOffset(CGPoint(x:0, y:600), animated: true)
+    }
+    
     
     //Dismisses the view when the home button is pressed
     @IBAction func homeBtnPressed(_ sender: Any) {

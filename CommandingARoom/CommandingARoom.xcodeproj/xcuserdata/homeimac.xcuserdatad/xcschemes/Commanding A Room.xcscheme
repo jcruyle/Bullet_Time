@@ -35,7 +35,7 @@
             BlueprintIdentifier = "7C022EA41E35B160003F507C"
             BuildableName = "Commanding A Room.app"
             BlueprintName = "Commanding A Room"
-            ReferencedContainer = "container:Commanding A Room.xcodeproj">
+            ReferencedContainer = "container:CommandingARoom.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -51,16 +51,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C022EA41E35B160003F507C"
-            BuildableName = "Commanding A Room.app"
-            BlueprintName = "Commanding A Room"
-            ReferencedContainer = "container:Commanding A Room.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

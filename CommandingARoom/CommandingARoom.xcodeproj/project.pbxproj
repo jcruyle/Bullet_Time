@@ -23,7 +23,6 @@
 		7C7D25D61E58C93200D7EAF2 /* AssignmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D51E58C93200D7EAF2 /* AssignmentsVC.swift */; };
 		7C7D25DA1E58C9AD00D7EAF2 /* BonusContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7D25D91E58C9AD00D7EAF2 /* BonusContentVC.swift */; };
 		95A6B4081EA5547600E3F021 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95A6B4071EA5547600E3F021 /* GoogleService-Info.plist */; };
-		EAC3BF3C1E9C193F0075531E /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3BF3B1E9C193F0075531E /* VideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -398,10 +397,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 85792MJYWR;
 				INFOPLIST_FILE = "Commanding A Room/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JCAPPS.Commanding-A-Room";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -412,10 +413,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 85792MJYWR;
 				INFOPLIST_FILE = "Commanding A Room/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JCAPPS.Commanding-A-Room";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
