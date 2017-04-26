@@ -125,6 +125,8 @@
 		EAC3BF391E9C17FC0075531E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA9F7CB11EAE714900F6DB88 /* BonusContent.swift */,
+				EA9F7CB31EAE715A00F6DB88 /* Controller */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -132,6 +134,7 @@
 		EAC3BF3A1E9C18090075531E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA9F7CAF1EAE6F7F00F6DB88 /* BonusCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -265,9 +268,11 @@
 				7C022EAB1E35B160003F507C /* LandingVC.swift in Sources */,
 				7C7D25CE1E58C7EC00D7EAF2 /* MyFeedbackVC.swift in Sources */,
 				7C022EA91E35B160003F507C /* AppDelegate.swift in Sources */,
+				EA9F7CB01EAE6F7F00F6DB88 /* BonusCell.swift in Sources */,
 				7C7D25CA1E58C49C00D7EAF2 /* LessonsVC.swift in Sources */,
 				7C7D25DA1E58C9AD00D7EAF2 /* BonusContentVC.swift in Sources */,
 				7C7D25D61E58C93200D7EAF2 /* AssignmentsVC.swift in Sources */,
+				EA9F7CB21EAE714900F6DB88 /* BonusContent.swift in Sources */,
 				7C7D25D21E58C8AC00D7EAF2 /* StartACourseVC.swift in Sources */,
 				7C16C0681E3EB5DE00558908 /* RegistrationVC.swift in Sources */,
 				7C7D25D01E58C87400D7EAF2 /* ContactInstructorVC.swift in Sources */,

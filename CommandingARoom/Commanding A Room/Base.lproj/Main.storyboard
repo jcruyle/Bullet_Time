@@ -523,7 +523,7 @@
                                         <rect key="frame" x="203.5" y="0.0" width="139.5" height="140"/>
                                         <state key="normal" image="Bonus"/>
                                         <connections>
-                                            <segue destination="Y0j-lX-Ju0" kind="show" id="ZWC-yg-f8E"/>
+                                            <segue destination="Y0j-lX-Ju0" kind="show" identifier="BonusContent" id="ZWC-yg-f8E"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -646,21 +646,21 @@
                                     <constraint firstAttribute="height" constant="521" id="kT0-Lb-pvb"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="kfT-Dx-Zph">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BonusCell" rowHeight="70" id="kfT-Dx-Zph" userLabel="Bonus Cell" customClass="BonusCell" customModule="Commanding_A_Room" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kfT-Dx-Zph" id="MJH-Fa-hTw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0O8-mX-HXi">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="0O8-mX-HXi" customClass="videoPreviewImage">
                                                     <rect key="frame" x="29" y="9" width="61" height="52"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="61" id="KRL-Am-bzG"/>
                                                         <constraint firstAttribute="height" constant="52" id="zXL-fT-RHR"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Langauge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvn-Gq-NGQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Langauge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvn-Gq-NGQ" userLabel="Video Title" customClass="videoTitle">
                                                     <rect key="frame" x="98" y="13.5" width="277" height="43"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="43" id="ZdZ-rN-xEr"/>
@@ -678,6 +678,10 @@
                                                 <constraint firstItem="Fvn-Gq-NGQ" firstAttribute="centerY" secondItem="MJH-Fa-hTw" secondAttribute="centerY" id="jTS-jx-gWq"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="0O8-mX-HXi" id="7Ph-J5-4Hc"/>
+                                            <outlet property="videoTitle" destination="Fvn-Gq-NGQ" id="YsC-3l-MFk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -696,7 +700,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="uV3-es-Naa" kind="showDetail" id="D1q-IM-N3w"/>
+                        <outlet property="tableView" destination="PwW-th-BiY" id="Ybx-Ic-eHT"/>
+                        <segue destination="uV3-es-Naa" kind="showDetail" identifier="VideoVC" id="D1q-IM-N3w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEX-Zd-g9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -714,12 +719,42 @@
                     <view key="view" contentMode="scaleToFill" id="gka-nR-fEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itd-5L-Imm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="rLD-ru-wal"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHO-BW-czE">
+                                <rect key="frame" x="0.0" y="286" width="375" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="3OW-Y6-SK2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85435073080000001" green="0.85435073080000001" blue="0.85435073080000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="itd-5L-Imm" firstAttribute="leading" secondItem="gka-nR-fEW" secondAttribute="leading" id="7XT-u5-362"/>
+                            <constraint firstAttribute="trailing" secondItem="itd-5L-Imm" secondAttribute="trailing" id="CKW-d9-eOP"/>
+                            <constraint firstItem="QHO-BW-czE" firstAttribute="top" secondItem="itd-5L-Imm" secondAttribute="bottom" constant="50" id="E8M-47-Oho"/>
+                            <constraint firstAttribute="trailing" secondItem="QHO-BW-czE" secondAttribute="trailing" id="EFB-k5-IMF"/>
+                            <constraint firstItem="QHO-BW-czE" firstAttribute="leading" secondItem="gka-nR-fEW" secondAttribute="leading" id="GdN-37-lrm"/>
+                            <constraint firstItem="itd-5L-Imm" firstAttribute="top" secondItem="gka-nR-fEW" secondAttribute="top" id="ths-x3-1FN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="QHO-BW-czE" id="yCk-ly-TGM"/>
+                        <outlet property="webView" destination="itd-5L-Imm" id="MaC-MO-XpK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93I-3N-WdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2439" y="139"/>
+            <point key="canvasLocation" x="2437.5999999999999" y="138.98050974512745"/>
         </scene>
         <!--MyFeedbackVC-->
         <scene sceneID="o5Y-yi-I8J">
