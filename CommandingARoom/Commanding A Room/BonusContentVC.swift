@@ -70,7 +70,6 @@ class BonusContentVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                 destination.bonusContent = bonus
             }
         }
-        
-        
     }
-            }
+
+}
