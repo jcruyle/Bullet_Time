@@ -71,5 +71,10 @@ class BonusContentVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
     }
+    
+    @IBAction func homeBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }
