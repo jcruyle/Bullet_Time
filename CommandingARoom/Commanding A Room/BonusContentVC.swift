@@ -19,11 +19,11 @@ class BonusContentVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         
-        let p1 = BonusContent(imageURL: "http://i3.ytimg.com/vi/Ks-_Mh1QhMc/hqdefault.jpg", videoURL: "<iframe width=\"400\" height=\"250\" src=\"https://www.youtube.com/embed/Ks-_Mh1QhMc\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Body Langauge")
+        let p1 = BonusContent(imageURL: "http://i3.ytimg.com/vi/Ks-_Mh1QhMc/hqdefault.jpg", videoURL: "<iframe width=\"349\" height=\"226\" src=\"https://www.youtube.com/embed/Ks-_Mh1QhMc\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Body Langauge")
         
-        let p2 = BonusContent(imageURL: "http://i3.ytimg.com/vi/-FOCpMAww28/hqdefault.jpg", videoURL: "<iframe width=\"400\" height=\"250\" src=\"https://www.youtube.com/embed/-FOCpMAww28\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Secret to Public Speaking")
+        let p2 = BonusContent(imageURL: "http://i3.ytimg.com/vi/-FOCpMAww28/hqdefault.jpg", videoURL: "<iframe width=\"349\" height=\"226\" src=\"https://www.youtube.com/embed/-FOCpMAww28\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Secret to Public Speaking")
         
-        let p3 = BonusContent(imageURL: "http://i3.ytimg.com/vi/a2MR5XbjtXU/hqdefault.jpg", videoURL: "<iframe width=\"400\" height=\"250\" src=\"https://www.youtube.com/embed/a2MR5XbJtXU\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Speaking with Confidence")
+        let p3 = BonusContent(imageURL: "http://i3.ytimg.com/vi/a2MR5XbjtXU/hqdefault.jpg", videoURL: "<iframe width=\"349\" height=\"226\" src=\"https://www.youtube.com/embed/a2MR5XbJtXU\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Speaking with Confidence")
         
         bonusContents.append(p1)
         bonusContents.append(p2)
