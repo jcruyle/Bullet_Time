@@ -16,6 +16,10 @@ class StartACourseVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func homeBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

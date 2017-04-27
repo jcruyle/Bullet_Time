@@ -122,6 +122,9 @@ class RegistrationVC: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func registerBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
   
     
 

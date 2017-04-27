@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -392,7 +392,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerBtnPressed:" destination="JGP-bA-GfX" eventType="touchUpInside" id="7kG-Fk-X6q"/>
+                                    <action selector="registerBtnPressed:" destination="JGP-bA-GfX" eventType="touchUpInside" id="utW-w5-zHI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKK-bA-h4D">
@@ -650,7 +650,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kfT-Dx-Zph" id="MJH-Fa-hTw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="0O8-mX-HXi" customClass="videoPreviewImage">
@@ -752,9 +752,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgG-Uu-pFF">
-                                <rect key="frame" x="16" y="600" width="70" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgG-Uu-pFF">
+                                <rect key="frame" x="16" y="20" width="70" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="4y6-ef-9Hc"/>
+                                    <constraint firstAttribute="width" constant="70" id="r3c-Zh-l8D"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -766,8 +769,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="FgG-Uu-pFF" firstAttribute="top" secondItem="AjS-km-wg3" secondAttribute="bottom" id="1gv-AV-cEv"/>
                             <constraint firstAttribute="trailing" secondItem="QHO-BW-czE" secondAttribute="trailing" id="EFB-k5-IMF"/>
                             <constraint firstItem="QHO-BW-czE" firstAttribute="leading" secondItem="gka-nR-fEW" secondAttribute="leading" id="GdN-37-lrm"/>
+                            <constraint firstItem="FgG-Uu-pFF" firstAttribute="leading" secondItem="gka-nR-fEW" secondAttribute="leadingMargin" id="PVe-py-8td"/>
                             <constraint firstItem="QHO-BW-czE" firstAttribute="leading" secondItem="gka-nR-fEW" secondAttribute="leading" id="Rv2-kN-ghe"/>
                             <constraint firstItem="QHO-BW-czE" firstAttribute="top" secondItem="AjS-km-wg3" secondAttribute="bottom" constant="20" id="VL9-eG-lH8"/>
                             <constraint firstItem="itd-5L-Imm" firstAttribute="leading" secondItem="gka-nR-fEW" secondAttribute="leading" constant="8" id="c39-OQ-hP6"/>
@@ -806,8 +811,25 @@
                                 <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM1-7P-n50">
+                                <rect key="frame" x="325" y="20" width="50" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="S03-JK-U4h"/>
+                                    <constraint firstAttribute="width" constant="50" id="gSs-Mc-X71"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="q0M-4I-Xd0"/>
+                                </constraints>
+                                <state key="normal" image="Home"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="h36-Ht-cAv" eventType="touchUpInside" id="7hw-Jr-Ccz"/>
+                                    <action selector="homeBtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="UPD-vf-GGJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oM1-7P-n50" secondAttribute="trailing" id="PzM-hm-QfC"/>
+                            <constraint firstItem="oM1-7P-n50" firstAttribute="top" secondItem="07l-5H-Vpy" secondAttribute="bottom" id="la3-cY-4bS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaZ-ON-kch" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -833,8 +855,25 @@
                                 <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-eb-hGP">
+                                <rect key="frame" x="325" y="20" width="50" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="34W-WP-mzs"/>
+                                    <constraint firstAttribute="height" constant="68" id="hgE-7o-yf0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="zXT-cF-2m3"/>
+                                </constraints>
+                                <state key="normal" image="Home"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="FLe-AL-iWj" eventType="touchUpInside" id="JjM-4T-dc7"/>
+                                    <action selector="homeBtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="M1G-WS-hep"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fQN-eb-hGP" secondAttribute="trailing" id="XAa-Qj-ugo"/>
+                            <constraint firstItem="fQN-eb-hGP" firstAttribute="top" secondItem="11i-38-Lvb" secondAttribute="bottom" id="ehq-Lq-GSu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igg-X4-w9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -860,8 +899,25 @@
                                 <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAM-kg-RvW">
+                                <rect key="frame" x="325" y="20" width="50" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Eeh-Xs-pKi"/>
+                                    <constraint firstAttribute="height" constant="68" id="Twf-cc-Q4g"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Yzt-u7-596"/>
+                                </constraints>
+                                <state key="normal" image="Home"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="CzZ-0c-cYj"/>
+                                    <action selector="homeBtnPressed:" destination="hlx-uz-nKt" eventType="touchUpInside" id="YZp-Yy-eyC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qAM-kg-RvW" firstAttribute="top" secondItem="KRY-bE-GGx" secondAttribute="bottom" id="Aw9-xe-hfu"/>
+                            <constraint firstAttribute="trailing" secondItem="qAM-kg-RvW" secondAttribute="trailing" id="Dce-eh-4EO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpO-tx-bMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2155,8 +2211,25 @@
                                 <color key="textColor" red="0.62745098040000002" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKN-60-Fss">
+                                <rect key="frame" x="325" y="20" width="50" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="QDy-dC-AKP"/>
+                                    <constraint firstAttribute="height" constant="68" id="bfH-sb-Elj"/>
+                                    <constraint firstAttribute="width" constant="50" id="zni-H4-t5o"/>
+                                </constraints>
+                                <state key="normal" image="Home"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="OtF-Ix-omx" eventType="touchUpInside" id="2lt-Ch-pD6"/>
+                                    <action selector="homeBtnPressed:" destination="mch-6V-2SB" eventType="touchUpInside" id="KuO-z2-4Of"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.27058823529999998" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rKN-60-Fss" firstAttribute="top" secondItem="Trc-Ei-6MV" secondAttribute="bottom" id="Pg8-xH-JpK"/>
+                            <constraint firstAttribute="trailing" secondItem="rKN-60-Fss" secondAttribute="trailing" id="RRs-MW-JLG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7W-0I-x8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
